@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Express Skills</title>
+</head>
+<body>
+    <h1>Edit Skills</h1>
+    <form action="/Skills/<%= skillId %>?_method=PUT" method="POST">
+        <input type="text" name="skill" autocomplete="off"
+        value="<%= skill.skill%>">
+        <button type="submit">Update Skills</button>
+    </form>
+</body>
+</html>
